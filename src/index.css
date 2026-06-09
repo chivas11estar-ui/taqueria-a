@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  /* Colores Corporativos - Modern Artisan Style Guide */
+  --color-warm-cream: #FFF7ED;
+  --color-brand-cream-light: #FFFBF7;
+  --color-charcoal-coffee: #1F1A17;
+  --color-cilantro-green: #16A34A;
+  --color-salsa-red: #DC2626;
+  --color-deep-orange: #EA580C;
+  --color-brand-primary: #a33900;
+  --color-brand-secondary: #006e2d;
+  --color-brand-background: #fff8f5;
+  --color-brand-surface: #ffdbce;
+  
+  --color-surface-tint: #a73a00;
+  --color-on-surface: #201b18;
+  --color-on-surface-variant: #5a4138;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+body {
+  background-color: #FFF7ED; /* warm-cream */
+  color: #1F1A17; /* charcoal-coffee */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom ambient low-opacity shadow */
+.soft-shadow {
+  box-shadow: 0 4px 20px -2px rgba(31, 26, 23, 0.08);
+}
+
+.soft-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soft-shadow-hover:hover {
+  box-shadow: 0 12px 28px -4px rgba(31, 26, 23, 0.12);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "A&L Taquería",
+  "description": "Aplicación móvil oficial de A&L Taquería. Explora nuestro menú, ordena tus tacos preferidos y acumula puntos de lealtad en cada pedido.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
